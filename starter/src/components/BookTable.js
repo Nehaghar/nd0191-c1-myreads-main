@@ -8,10 +8,8 @@ const BookTable = ({books}) =>
   const searchQuery =(showSearchPage)=>{
     setShowSearchpage(showSearchPage.trim());
   };
-   
+   //const showingBooks = showSearchPage === "" ? books : books.filter((b)=> b.title.toLowerCase().includes(showSearchPage.toLowerCase()));
 
-  //const showingBooks = showSearchPage === "" ? books : books.filter((b)=> b.title.toLowerCase().includes(showSearchPage.toLowerCase()));
-  
 return( <div className="app">
    {showSearchPage ? (
         <div className="search-books">
